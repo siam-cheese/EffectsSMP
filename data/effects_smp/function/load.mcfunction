@@ -1,4 +1,4 @@
-scoreboard objectives add selectedEFfect dummy
+scoreboard objectives add selectedEffect dummy
 scoreboard objectives add level dummy
 scoreboard objectives add killIncrease playerKillCount
 scoreboard objectives add deathIncrement deathCount
@@ -15,6 +15,10 @@ function effects_smp:one_sec
 scoreboard objectives add swimming minecraft.custom:swim_one_cm
 scoreboard objectives add ateEGap minecraft.used:enchanted_golden_apple
 scoreboard objectives add withdrawlLevel trigger
+scoreboard objectives add startRoll dummy
+
+scoreboard objectives add reRoll dummy
+scoreboard players set spinRate nums 1
 
 #teams
 team add strength "strength"
