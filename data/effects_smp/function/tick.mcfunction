@@ -1,5 +1,5 @@
 execute as @a unless score @s level matches -2147483648..2147483647 run scoreboard players set @s level 0
-execute as @a unless score @s selectedEFfect matches -2147483648..2147483647 store result score @s selectedEFfect run random value 1..2
+execute as @a unless score @s selectedEFfect matches -2147483648..2147483647 store result score @s selectedEFfect run random value 1..6
 
 
 execute as @a[scores={deathIncrement=1.., level=-1..}] unless entity @a[scores={killIncrease=1.., level=..1}] at @s run summon item ~ ~1 ~ {Item:{components: {"minecraft:item_name": {color: "dark_green", text: "Level", italic: 0b}, "minecraft:tooltip_display": {hide_tooltip: 1b}, "minecraft:custom_name": {extra: [{color: "dark_green", text: "Level", bold: 1b}], text: ""}, "minecraft:rarity": "epic", "minecraft:potion_contents": {custom_color: 7329853, custom_effects: [{duration: 1, show_icon: 1b, amplifier: 20b, id: "minecraft:luck"}]}}, count: 1, id: "minecraft:potion"}, PickupDelay: 1s}

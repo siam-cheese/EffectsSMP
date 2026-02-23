@@ -1,32 +1,58 @@
 ## HIDDEN LIFE
 
 # Important Operator Commands:
-    /function hidden_life:start
+    //scoreboard players remove <player selector> selectedEffect
 
-Begins the session, randomizes peoples lives
+Randomizes the players chosen effect (if online)
 
-    /function hidden_life:hitmen_start
+    //scoreboard players remove <player selector> level
 
-declares certain people hitmen you can customize the chance with
-
-    /scoreboard players set #hitMenChance numbers <chance 1 - 100>
-
-finally
-
-    /scoreboard players set <player> HLives <number of lives>
-
-sets a certain player to a life
+Removes players level and resets it to 0
 
 
 # Important General commands
-    /trigger withDrawLife
+    /trigger withDrawLevel
 
-withdraws the life of a player and gives it to them as an item
+withdraws a level of a player
 
-    /trigger lifeCount
+# Temporary descriptions
+Effects SMP: Everyone gets one of six random effects:
 
-tells you your current number of lives
+-Strength
+-Speed/Fire Res
+-Health Boost
+-Haste
+-Hero of the Village/Luck
+-Regeneration/Resistance
+-Water breathing/dolphins grace
 
-    /trigger claimAssasinKill
 
-confims that you have killed your target if you were an assasin
+All effects start at neutral. (No effect) All effects are permanent unless you change them using an item Dying brings you down a level, killing someone else brings you up a level. If you kill someone at the lowest level you gain nothing.
+Strength:
+1 kill - strength 1, 2 kill - strength 2, 1 death - weakness 1, 2 deaths - weakness 2
+
+Speed/Fire res:
+1 kill - fire res, 2 kill - fire res and speed 1, 1 death - slowness 1, 2 death - slowness 2
+
+Health boost:
+1 kill - +3 hearts, 2 kill - +6 hearts, 1 death - -2 hearts, 2 death - -3 hearts
+
+Haste:
+1 kill - haste 2, 2 kill - haste 5, 1 death - mining fatigue 1, 2 death - mining fatigue 2
+
+Hero of the village/luck:
+1 kill - luck 1, 2 kill - luck 1 and hero of the village 1, 1 death - all trades cost 10 more emeralds, 2 death - all trades cost 20 more emeralds
+
+Regen/Resistance:
+1 kill - regen 1, 2 kill - regen 1 and resistance 1, 1 death - take 25% more damage, 2 death - takes 50% more damage
+
+Water breathing/dolphins grace:
+1 kill - water breathing, 2 kill - water breathing and +20% speed in water, 1 death - slowness 1 in water, 2 death - slowness 1 and blindness 1 in water
+
+No hero of the village from doing raids
+Also make enchanted golden apples not give fire res or resistance
+
+
+Effect reroll potion- when you drink the potion, all 6 effects effect will roll until you land on one of the effects
+
+Effect reroll potion crafting recipe: 1 nether star, 4 netherite ingots, 4 diamond blocks

@@ -1,3 +1,0 @@
-
-#strength
-execute as @a
