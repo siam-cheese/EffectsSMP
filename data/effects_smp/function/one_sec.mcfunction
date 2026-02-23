@@ -27,6 +27,13 @@ effect give @a[scores={selectedEFfect=4,level=2}] mining_fatigue 5 1 true
 effect give @a[scores={selectedEFfect=5,level=2}] hero_of_the_village 5 0 true
 execute as @a[scores={selectedEFfect=5,level=1..}] run attribute @s generic.luck base set 10
 
+#regen/resistence
+effect give @a[scores={selectedEFfect=6,level=2}] resistance 5 0 true
+effect give @a[scores={selectedEFfect=6,level=1..}] regeneration 5 0 true
+
+#water breathing
+effect give @a[scores={selectedEFfect=7,level=1..}] water_breathing 5 0 true
+
 
 
 schedule function effects_smp:one_sec 1s
