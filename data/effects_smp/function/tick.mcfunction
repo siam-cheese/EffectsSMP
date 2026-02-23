@@ -59,6 +59,7 @@ execute as @a[scores={withdrawlLevel=1.., level=-2}] at @s run tellraw @s {"colo
 #misc
 execute as @a unless entity @s[scores={selectedEffect=5, level=2..}] run effect clear @s hero_of_the_village
 execute as @a[scores={ateEGap=1..},nbt={active_effects:[{id:"minecraft:resistance",amplifier:1b}]}] unless entity @s[scores={selectedEffect=5, level=2..}] run effect clear @s resistance
+execute as @a[scores={ateEGap=1..},nbt={active_effects:[{id:"minecraft:fire_resistance",amplifier:1b}]}] unless entity @s[scores={selectedEffect=2, level=2..}] run effect clear @s fire_resistance
 
 
 #reset scores
