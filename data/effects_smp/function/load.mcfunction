@@ -20,5 +20,7 @@ team add haste "haste"
 team modify haste color yellow
 team add hero "hero"
 team modify hero color green
+team add regen "regen"
+team modify regen color dark_red
 team add water "water"
 team modify water color dark_blue

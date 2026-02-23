@@ -15,44 +15,30 @@ Removes players level and resets it to 0
 
 withdraws a level of a player
 
-# Temporary descriptions
-Effects SMP: Everyone gets one of six random effects:
+# CURRENT PROGRESS
 
--Strength
--Speed/Fire Res
--Health Boost
--Haste
--Hero of the Village/Luck
--Regeneration/Resistance
--Water breathing/dolphins grace
+feature progress 7.5/14 features completed
 
+## Complete features 
+* Strength effect
+* Speed effect
+* haste effect
+* randomize effect
+* give level/drop level on kill/death respectively (longest to do)
+* consuming level potion
+* no hero of the village
 
-All effects start at neutral. (No effect) All effects are permanent unless you change them using an item Dying brings you down a level, killing someone else brings you up a level. If you kill someone at the lowest level you gain nothing.
-Strength:
-1 kill - strength 1, 2 kill - strength 2, 1 death - weakness 1, 2 deaths - weakness 2
+## Inprogress features
+* hero of the village effect - long
 
-Speed/Fire res:
-1 kill - fire res, 2 kill - fire res and speed 1, 1 death - slowness 1, 2 death - slowness 2
-
-Health boost:
-1 kill - +3 hearts, 2 kill - +6 hearts, 1 death - -2 hearts, 2 death - -3 hearts
-
-Haste:
-1 kill - haste 2, 2 kill - haste 5, 1 death - mining fatigue 1, 2 death - mining fatigue 2
-
-Hero of the village/luck:
-1 kill - luck 1, 2 kill - luck 1 and hero of the village 1, 1 death - all trades cost 10 more emeralds, 2 death - all trades cost 20 more emeralds
-
-Regen/Resistance:
-1 kill - regen 1, 2 kill - regen 1 and resistance 1, 1 death - take 25% more damage, 2 death - takes 50% more damage
-
-Water breathing/dolphins grace:
-1 kill - water breathing, 2 kill - water breathing and +20% speed in water, 1 death - slowness 1 in water, 2 death - slowness 1 and blindness 1 in water
-
-No hero of the village from doing raids
-Also make enchanted golden apples not give fire res or resistance
+## Not Started
+* Regen/Resistance Effect - quick
+* Waterbreathing/dolphins grace effect - quick
+* remove resistance from enchanted golden apples - quick
+* effect reroll potion - quick
+* reroll potion recipe - medium/quick
+* Level potion recipe - medium/quick
+* Reroll animation - long/medium
+* /trigger withdrawlLevel - quick
 
 
-Effect reroll potion- when you drink the potion, all 6 effects effect will roll until you land on one of the effects
-
-Effect reroll potion crafting recipe: 1 nether star, 4 netherite ingots, 4 diamond blocks
