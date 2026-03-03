@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "XYX",
+    "   ",
+    "   "
+  ],
+  "key": {
+    "X": [
+      "minecraft:gold_ingot"
+    ],
+    "Y": [
+      "minecraft:oak_planks"
+    ]
+  },
+  "result": {
+    "id": "minecraft:potion",
+    "components": {
+      "minecraft:item_name": "Reroll",
+      "minecraft:potion_contents": {
+        "potion": "minecraft:swiftness",
+        "custom_color": 12544315,
+        "custom_name": "REROLL EFFECT",
+        "custom_effects": [
+          {
+            "id": "minecraft:unluck",
+            "amplifier": 20,
+            "duration": 1
+          }
+        ]
+      }
+    }
+  }
+}

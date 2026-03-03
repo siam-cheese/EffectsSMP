@@ -36,11 +36,12 @@ feature progress 12.5/16 features completed
 * hero of the village effect - long
 * Regen/Resistance Effect - medium
 * Waterbreathing/dolphins grace effect - medium
+* reroll potion recipe - medium/quick
+* Level potion recipe - medium/quick
+
 
 
 ## Not Started
-* reroll potion recipe - medium/quick
-* Level potion recipe - medium/quick
 
 
 
