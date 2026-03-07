@@ -3,11 +3,14 @@ scoreboard players enable @a withdrawlLevel
 #effects
 
 #waterbreathing/dolphins grace
-execute as @a[scores={selectedEffect=5,level=1..}] at @s if block ~ ~ ~ water run attribute @s generic.movement_speed base set 1
-execute as @a[scores={selectedEffect=5,level=1..,swimming = 1..}] run attribute @s generic.movement_speed base set 3
+execute as @a[scores={selectedEffect=7,level=2..}] at @s if block ~ ~ ~ water run attribute @s minecraft:movement_speed base set .15
+execute as @a[scores={selectedEffect=7,level=2..,swimming = 1..}] run attribute @s minecraft:movement_speed base set .2
 
-execute as @a[scores={selectedEffect=5,level=1..}] at @s if block ~ ~ ~ water run effect give @s slowness 1 0 true
-execute as @a[scores={selectedEffect=5,level=1..}] at @s if block ~ ~ ~ water run effect give @s slowness 1 1 true 
+execute as @a[scores={selectedEffect=7}] unless score @s swimming matches -2147483648..2147483647 at @s unless block ~ ~ ~ water run attribute @s minecraft:movement_speed base reset
+
+
+execute as @a[scores={selectedEffect=7,level=-1}] at @s if block ~ ~ ~ water run effect give @s slowness 1 0 true
+execute as @a[scores={selectedEffect=7,level=..-2}] at @s if block ~ ~ ~ water run effect give @s slowness 1 1 true 
 
 #REROLL ANIMATION
 execute as @a[scores={startRoll=0..}] run scoreboard players operation @s startRoll -= #1 nums 
@@ -29,7 +32,7 @@ execute as @a if score @s startRoll matches 20 run scoreboard players set spinRa
 execute as @a unless score @s level matches -2147483648..2147483647 run scoreboard players set @s level 0
 execute as @a unless score @s selectedEffect matches -2147483648..2147483647 run function effects_smp:add_to_team
 
-execute as @a[nbt={active_effects:[{id:"minecraft:unluck",amplifier:20b}]}] run function effects_smp:add_to_team
+execute as @a[nbt={active_effects:[{id:"minecraft:unluck",amplifier:20b}]}] run function effects_smp:reroll
 
 # LEVEL SYSTEM
 execute as @a[scores={deathIncrement=1.., level=-1..}] unless entity @a[scores={killIncrease=1.., level=..1}] at @s run summon item ~ ~1 ~ {Item:{components: {"minecraft:item_name": {color: "dark_green", text: "Level", italic: 0b}, "minecraft:tooltip_display": {hide_tooltip: 1b}, "minecraft:custom_name": {extra: [{color: "dark_green", text: "Level", bold: 1b}], text: ""}, "minecraft:rarity": "epic", "minecraft:potion_contents": {custom_color: 7329853, custom_effects: [{duration: 1, show_icon: 1b, amplifier: 20b, id: "minecraft:luck"}]}}, count: 1, id: "minecraft:potion"}, PickupDelay: 1s}
@@ -58,8 +61,8 @@ execute as @a[scores={withdrawlLevel=1.., level=-2}] at @s run tellraw @s {"colo
 
 #misc
 execute as @a unless entity @s[scores={selectedEffect=5, level=2..}] run effect clear @s hero_of_the_village
-execute as @a[scores={ateEGap=1..},nbt={active_effects:[{id:"minecraft:resistance",amplifier:1b}]}] unless entity @s[scores={selectedEffect=5, level=2..}] run effect clear @s resistance
-execute as @a[scores={ateEGap=1..},nbt={active_effects:[{id:"minecraft:fire_resistance",amplifier:1b}]}] unless entity @s[scores={selectedEffect=2, level=2..}] run effect clear @s fire_resistance
+execute as @a[scores={ateEGap=1..},nbt={active_effects:[{id:"minecraft:resistance"}]}] unless entity @s[scores={selectedEffect=2, level=2..}] run effect clear @s resistance
+execute as @a[scores={ateEGap=1..},nbt={active_effects:[{id:"minecraft:fire_resistance"}]}] unless entity @s[scores={selectedEffect=2, level=2..}] run effect clear @s fire_resistance
 
 
 #reset scores
