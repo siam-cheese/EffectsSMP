@@ -3,15 +3,18 @@
   "category": "misc",
   "pattern": [
     "XYX",
-    "   ",
-    "   "
+    "YEY",
+    "XYX"
   ],
   "key": {
     "X": [
-      "minecraft:gold_ingot"
+      "minecraft:netherite_ingot"
     ],
     "Y": [
-      "minecraft:oak_planks"
+      "minecraft:diamond_block"
+    ],
+    "E": [
+      "minecraft:nether_star"
     ]
   },
   "result": {
