@@ -30,7 +30,7 @@ execute as @a if score @s startRoll matches 20 run scoreboard players set spinRa
 
 
 execute as @a unless score @s level matches -2147483648..2147483647 run scoreboard players set @s level 0
-execute as @a unless score @s selectedEffect matches -2147483648..2147483647 run function effects_smp:add_to_team
+execute as @a unless score @s selectedEffect matches -2147483648..2147483647 run function effects_smp:reroll
 
 execute as @a[nbt={active_effects:[{id:"minecraft:unluck",amplifier:20b}]}] run function effects_smp:reroll
 
